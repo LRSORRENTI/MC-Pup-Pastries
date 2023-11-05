@@ -46,11 +46,12 @@ body {
     width: 490px;
     display: block;
     margin: auto;
-    margin-top: 8%;
+    margin-top: 12%;
     margin-bottom: 8%;
     text-align: center;
     font-size: 1.5rem ;
     font-weight: 200;
+    
 }
 @media (min-width: 1000px) {
   #main-container{
@@ -62,7 +63,7 @@ body {
 #head-cont {
   font-family: 'GreatVibes';
   font-size: 3.1rem;
-  margin-bottom: 3%;
+  margin-bottom: 5%;
 }
 
 article {
