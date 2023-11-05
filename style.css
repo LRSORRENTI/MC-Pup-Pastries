@@ -162,6 +162,41 @@ article {
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 24px;
   }
+  @media (max-width: 500px) {
+    body {
+      padding: 24px 0; /* Reduced padding for smaller screens */
+      font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+  
+    #bear {
+      width: 80%; /* Make bear image responsive */
+      height: auto; /* Maintain aspect ratio */
+      margin-top: 15px;
+    }
+  
+    #main-container {
+      width: 100%; /* Full width on small screens */
+      margin-top: 10%; /* Adjusted margin */
+      margin-bottom: 5%; /* Adjusted margin */
+      padding: 0 20px; /* Add padding on the sides */
+      font-size: 1.2rem; /* Adjust font size if needed */
+    }
+  
+    #head-cont {
+      font-size: 2rem; /* Adjust heading font size for smaller screens */
+    }
+  
+    .articles {
+      padding-inline: 10px; /* Adjust padding for the articles container */
+      grid-template-columns: 1fr; /* Stack articles in one column */
+    }
+  
+    article {
+      --img-scale: 1; /* Prevent scaling on small screens */
+    }
+  
+    /* Adjust other elements as needed */
+  }
 
   /* FOOTER */
 
