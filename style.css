@@ -226,6 +226,11 @@ article:has(:hover, :focus) {
   padding: 40px 0;
   /* background-color: #ffffff; */
 }
+
+#footer-a {
+ color: #272727;
+ font-weight:900;
+}
 .footer .social {
   text-align: center;
   padding-bottom: 25px;
@@ -421,11 +426,12 @@ button {
 }
 
 .popup-open {
-  color: #4b4c4d;
+  color: #3d3d3d;
+  font-family: "GlassAntiqua";
 }
 
 .popup-open:hover {
-  color: #000000;
+  color: #fff;
 }
 
 textarea {
