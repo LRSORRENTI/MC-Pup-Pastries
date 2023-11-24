@@ -54,7 +54,7 @@ body {
 }
 
 #main-container {
-  width: 490px;
+  width: 600px;
   display: block;
   margin: auto;
   margin-top: 12%;
@@ -183,7 +183,7 @@ article:has(:hover, :focus) {
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 24px;
 }
-@media (max-width: 500px) {
+@media (max-width: 610px) {
   body {
     padding: 24px 0; /* Reduced padding for smaller screens */
     font-size: 1rem; /* Adjust font size for smaller screens */
