@@ -6,15 +6,6 @@ PUP PASTRIES TO-DO LIST
 
 2. Underneath in Glass Antiqua say "Made Locally in Wauwatosa, Wisconsin"
 
-3. Background color change #87A597
-
-4. Keep text color black
-
-5. Contact card color #3D6950
-
-6. Use La Belle Aurora for the name of the pastries.
-   Right now I have "Bear's Biscuits" and "Chloe's Cupcakes"
-
 7. Set up email, MC has work email
 
 8. Change modal color to match website Background 

@@ -278,6 +278,7 @@ article:has(:hover, :focus) {
 }
 .footer ul a:hover {
   opacity: 1;
+
 }
 .footer .copyright {
   margin-top: 15px;
@@ -416,10 +417,11 @@ button {
   border-radius: 5px;
   border: 1px solid #ccc; 
   outline: none;
+  color: #28666e
 }
 
 .popup-form__input:focus {
-  outline: 2px solid #ccc; /* You can replace black with any color you prefer */
+  outline: 2px solid #ccc; 
 }
 
 .popup-form__submit {
@@ -469,3 +471,14 @@ textarea {
     width: calc(100% - 30px); /* Adjusted width to account for padding */
   }
 }
+
+/* @media (max-width: 610px) {
+   #head-cont {
+    font-size: 1.6rem;
+  }
+  #main-cont-p {
+    font-family: "GlassAntiqua", sans-serif;
+    font-size: 22px;
+}
+} */
+
