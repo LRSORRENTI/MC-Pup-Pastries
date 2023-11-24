@@ -445,12 +445,16 @@ textarea {
 }
 
 /* Media query for phones */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   .popup-form__input,
   textarea {
     border: 1px solid #ccc; /* Adjust the color as needed */
     /* Ensure the left border is included */
     border-left: 1px solid #ccc;
+  }
+
+  #head-cont {
+    line-height: 30px;
   }
 
   /* If you have any padding or width set on the inputs that might be causing layout issues, you might want to adjust them within this media query as well. For example: */
