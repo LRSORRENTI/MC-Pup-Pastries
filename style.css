@@ -87,6 +87,7 @@ article {
   --title-color: black;
   --link-icon-translate: -20px;
   --link-icon-opacity: 0;
+  font-family: "LaBelleAurore";
   position: relative;
   border-radius: 16px;
   /* box-shadow: none; */
@@ -108,11 +109,12 @@ article a::after {
 /* basic article elements styling */
 article h2 {
   margin: 0 0 18px 0;
-  font-family: "Bebas Neue", cursive;
+  /* font-family: "Bebas Neue", cursive; */
   font-size: 1.9rem;
   letter-spacing: 0.06em;
   color: var(--title-color);
   transition: color 0.3s ease-out;
+  
 }
 
 figure {
