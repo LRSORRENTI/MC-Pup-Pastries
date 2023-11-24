@@ -328,7 +328,7 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #ffffff;
+  background-color: #87a597;
   border-radius: 15px;
 }
 
@@ -337,6 +337,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 5px;
 }
 
 .close-btn {
@@ -416,6 +417,7 @@ button {
 
 textarea {
   font-family: sans-serif;
+  border-radius: 5px;
 }
 
 /* Media query for phones */
