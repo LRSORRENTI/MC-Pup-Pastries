@@ -338,6 +338,7 @@ button {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  
 }
 
 .close-btn {
@@ -397,6 +398,13 @@ button {
   margin-bottom: 20px;
   padding: 12px 20px;
   width: 80%;
+  border-radius: 5px;
+  border: 1px solid #ccc; 
+  outline: none;
+}
+
+.popup-form__input:focus {
+  outline: 2px solid #ccc; /* You can replace black with any color you prefer */
 }
 
 .popup-form__submit {
@@ -418,6 +426,7 @@ button {
 textarea {
   font-family: sans-serif;
   border-radius: 5px;
+  border: 1px solid #ccc; 
 }
 
 /* Media query for phones */
