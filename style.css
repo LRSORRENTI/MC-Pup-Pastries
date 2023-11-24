@@ -32,6 +32,7 @@ body {
   background-color: #87a597;
   /* background-image: linear-gradient(45deg, #ffffff, rgb(236, 236, 236)); */
   min-height: 100vh;
+  -webkit-tap-highlight-color: transparent;
 }
 
 #bear {
