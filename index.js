@@ -4,12 +4,12 @@ let popupBtn = document.querySelector(".popup-open");
 let popupClose = document.querySelector(".close-btn");
 
 popupBtn.addEventListener("click", (e) => {
-  e.preventDefault;
+  e.preventDefault();
   showPopup();
 });
 
 popupClose.addEventListener("click", (e) => {
-  e.preventDefault;
+  e.preventDefault();
   removePopup();
 });
 
@@ -36,5 +36,9 @@ function removePopup() {
 
 function bodyScroll() {
   document.body.classList.toggle("no-scroll");
+}
+
+function closePopup() {
+  document.getElementById('popup-message').style.display = 'none';
 }
 
