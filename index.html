@@ -138,18 +138,22 @@
             <button class="popup-open">Contact</button>
             <div class="popup-wrapper">
               <div class="popup">
-                <botton class="close-btn"></botton>
-                <form class="popup-form">
+                <button class="close-btn"></button> <!-- Fixed the opening tag here -->
+                <form class="popup-form" action="http://localhost:3000/send" method="post">
                   <h2 class="popup-form__title">Contact Us</h2>
                   <input
                     type="text"
+                    name="name" 
                     class="popup-form__input"
                     placeholder="Name"
+                    required
                   />
                   <input
-                    type="tel"
+                    type="email" 
+                    name="email" 
                     class="popup-form__input"
                     placeholder="Email"
+                    required
                   />
                   <textarea
                     class="popup-form__input"
@@ -158,12 +162,14 @@
                     id="messageArea"
                     cols="30"
                     rows="10"
+                    required
                   ></textarea>
                   <button type="submit" class="popup-form__submit">Send</button>
                 </form>
               </div>
             </div>
           </section>
+          
         </li>
         <li>
           <a id="footer-a" href="#">About</a>

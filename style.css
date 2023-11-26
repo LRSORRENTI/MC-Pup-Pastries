@@ -357,6 +357,46 @@ button {
   
 }
 
+.popupMsg {
+  padding: 22px 25px;
+  max-width: 380px;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #87a597;
+  border-radius: 15px;
+  display: none; /* Hide popup initially */
+  z-index: 1000; /* Make sure it's on top of other elements */
+}
+#innerpopup{
+  display: flex;
+  flex-direction: row;
+}
+
+#popup-text {
+  display: flex;
+  margin: auto;
+}
+
+#popup-message{
+  padding: 22px;
+  max-width: 380px;
+  width: 90%; /* You can adjust this to your preference */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 15px;
+  border: 10px solid #87a597;
+  display: none; /* Hide popup initially */
+  z-index: 1000; /* Make sure it's on top of other elements */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for better visibility */
+  text-align: center; /* Center align the text */
+} 
+
 .close-btn {
   position: absolute;
   top: 0;
