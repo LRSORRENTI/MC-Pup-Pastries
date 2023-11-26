@@ -2,14 +2,16 @@ require('dotenv').config();
 const express = require('express');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
-const bodyParser = require('body-parser');
+const multer = require('multer');
 
 const app = express();
 
+// Set up multer for multipart form data
+const upload = multer();
+
 // Middleware
 app.use(cors());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+
 
 // Nodemailer transporter
 const transporter = nodemailer.createTransport({
@@ -20,7 +22,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-app.post('/send', (req, res) => {
+app.post('/send', upload.none(), (req, res) => { // Use multer middleware
   const { name, email, message } = req.body;
 
   const mailOptions = {
@@ -36,10 +38,10 @@ Message: ${message}`,
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       console.log(error);
-      res.status(500).send('Error sending email');
+      res.status(500).json({ status: 'error', message: 'Error sending email' }); // Send JSON response
     } else {
       console.log('Email sent: ' + info.response);
-      res.status(200).send('Email successfully sent');
+      res.status(200).json({ status: 'success', message: 'Email successfully sent' }); // Send JSON response
     }
   });
 });

@@ -87,7 +87,7 @@
             <div class="popup-wrapper">
               <div class="popup">
                 <button class="close-btn"></button> <!-- Fixed the opening tag here -->
-                <form class="popup-form" action="http://localhost:3000/send" method="post">
+                <form name="contact" class="popup-form" method="POST" data-netlify="true" data-netlify-function="send-email">
                   <h2 class="popup-form__title">Contact Us</h2>
                   <input
                     type="text"
@@ -126,7 +126,57 @@
       </ul>
       <p class="copyright">Pup Pastries @ 2023</p>
     </section>
-
     <script src="/index.js"></script>
+    <!-- <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var form = document.querySelector('.popup-form');
+        
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          var formData = new FormData(form);
+          
+          fetch('http://localhost:3000/send', {
+            method: 'POST',
+            body: formData
+          })
+          .then(response => response.json())
+          .then(data => {
+            if (data.status === 'success') {
+              showMessage('Email sent successfully!');
+            } else {
+              showMessage('Failed to send email.');
+            }
+          })
+          .catch(error => {
+            console.error('Error:', error);
+            showMessage('Failed to send email.');
+          });
+        });
+        
+        function showMessage(message) {
+          var messageDiv = document.createElement('div');
+          messageDiv.textContent = message;
+          
+          messageDiv.style.position = 'fixed';
+          messageDiv.style.top = '50%';
+          messageDiv.style.left = '50%';
+          messageDiv.style.transform = 'translate(-50%, -50%)';
+          messageDiv.style.backgroundColor = 'lightgreen';
+          messageDiv.style.padding = '20px';
+          messageDiv.style.borderRadius = '5px';
+          messageDiv.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+          messageDiv.style.textAlign = 'center';
+          messageDiv.style.zIndex = '1000';
+          
+          document.body.appendChild(messageDiv);
+          
+          setTimeout(function() {
+            document.body.removeChild(messageDiv);
+          }, 5000);
+        }
+      });
+    </script> -->
+    <!-- <script src="/index.js"></script> -->
+
   </body>
 </html>
