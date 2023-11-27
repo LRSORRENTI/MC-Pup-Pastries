@@ -144,6 +144,7 @@
           .then(data => {
             if (data.status === 'success') {
               showMessage('Email sent successfully!');
+              form.reset();
             } else {
               showMessage('Failed to send email.');
             }
@@ -162,18 +163,19 @@
           messageDiv.style.top = '50%';
           messageDiv.style.left = '50%';
           messageDiv.style.transform = 'translate(-50%, -50%)';
-          messageDiv.style.backgroundColor = 'lightgreen';
-          messageDiv.style.padding = '20px';
+          messageDiv.style.backgroundColor = '#87a597';
+          messageDiv.style.padding = '30px';
           messageDiv.style.borderRadius = '5px';
           messageDiv.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
           messageDiv.style.textAlign = 'center';
           messageDiv.style.zIndex = '1000';
+          messageDiv.style.border = '3px solid white';
           
           document.body.appendChild(messageDiv);
           
           setTimeout(function() {
             document.body.removeChild(messageDiv);
-          }, 5000);
+          }, 3000);
         }
       });
     </script>
