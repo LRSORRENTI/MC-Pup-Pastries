@@ -346,6 +346,7 @@ button {
   transform: translate(-50%, -50%);
   background-color: #87a597;
   border-radius: 15px;
+  border: 1px solid white;
 }
 
 .popup-form {
