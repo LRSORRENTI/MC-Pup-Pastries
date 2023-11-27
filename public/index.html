@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pup Pastries</title>
-    <link rel="icon" type="image/ico" href="/public/BEAR.ico">
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" type="image/ico" href="./BEAR.ico">
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="banner">
@@ -21,7 +21,7 @@
       <article>
         <div class="article-wrapper">
           <figure>
-            <img id="bisq" src="/imgs/biscuits.jpg" alt="" />
+            <img id="bisq" src="./imgs/biscuits.jpg" alt="" />
           </figure>
           <div class="article-body">
             <h2>Bear's Biscuits</h2>
@@ -47,7 +47,7 @@
       <article>
         <div class="article-wrapper">
           <figure>
-            <img id="img1" src="/imgs/ginger.jpg" alt="" />
+            <img id="img1" src="./imgs/ginger.jpg" alt="" />
           </figure>
           <div class="article-body">
             <h2>Chloe's Cupcakes</h2>
@@ -127,7 +127,7 @@
       </ul>
       <p class="copyright">Pup Pastries @ 2023</p>
     </section>
-    <script src="/index.js"></script>
+    <script src="./index.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
         var form = document.querySelector('.popup-form');
@@ -136,7 +136,7 @@
           e.preventDefault();
           var formData = new FormData(form);
           
-          fetch('https://git.heroku.com/salty-oasis-03258.git/send', {
+          fetch('https://salty-oasis-03258-8b35f69aa684.herokuapp.com/send', {
             method: 'POST',
             body: formData
           })
