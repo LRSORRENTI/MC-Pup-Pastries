@@ -11,6 +11,7 @@ const upload = multer();
 
 // Middleware
 app.use(cors());
+app.use(express.static('public'));
 
 
 // Nodemailer transporter
