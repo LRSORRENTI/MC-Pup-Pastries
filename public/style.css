@@ -1,15 +1,15 @@
 @font-face {
   font-family: "GreatVibes";
-  src: url(/fonts/GreatVibes-Regular.ttf);
+  src: url(./fonts/GreatVibes-Regular.ttf);
 }
 @font-face {
   font-family: "GlassAntiqua";
-  src: url(/fonts/GlassAntiqua-Regular.ttf);
+  src: url(./fonts/GlassAntiqua-Regular.ttf);
 }
 
 @font-face {
   font-family: "LaBelleAurore";
-  src: url(/fonts/LaBelleAurore-Regular.ttf);
+  src: url(./fonts/LaBelleAurore-Regular.ttf);
 }
 * {
   margin: 0;
