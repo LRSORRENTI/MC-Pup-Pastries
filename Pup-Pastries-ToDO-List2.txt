@@ -16,3 +16,70 @@ PUP PASTRIES TO-DO LIST
    by a few px
 
 10. Start with two main cards, Mc is starting with two
+
+
+==================
+DOMAIN NAME CHANGE
+==================
+
+In order to not have the default heroku.123123123.app url: 
+
+Heroku provides default domain names (like yourapp.herokuapp.com), 
+but if you want to use a custom domain like pup-pastries.com,
+you would need to purchase it through a domain registrar and then 
+configure it to work with your Heroku app. 
+Here's a general outline of the process:
+
+Purchasing a Domain
+Choose a Domain Registrar: Select a domain registrar 
+(like GoDaddy, Namecheap, Google Domains, etc.) 
+to purchase your domain from.
+
+Search for Availability: Search for your 
+desired domain name (pup-pastries.com) 
+to check its availability.
+
+Purchase the Domain: Follow the registrar's 
+process to purchase the domain.
+
+Configuring the Domain with Heroku
+Add Your Domain to Heroku:
+
+In your Heroku dashboard, go to the "Settings" tab of your app.
+Under the "Domains and certificates" section, click "Add domain".
+Enter your domain name and save the changes.
+
+DNS Configuration:
+
+Heroku will provide you with a DNS target 
+(like example.herokuapp.com or a set of DNS records).
+
+Go to your domain registrar's website and access the DNS management section.
+Update your DNS settings by adding the records provided by Heroku. This typically involves creating a CNAME record for www subdomains or using ANAME/ALIAS records for root domains.
+
+Propagation Time:
+
+DNS changes can take some time to propagate, 
+typically up to 48 hours.
+
+SSL (Optional but Recommended):
+
+For secure connections (HTTPS), consider 
+setting up SSL for your custom domain.
+
+Heroku offers Automated Certificate Management (ACM) which provides free SSL certificates.
+
+Verify Setup:
+
+Once DNS changes have propagated, 
+your custom domain should point to your Heroku app.
+
+You can check this by visiting your custom domain in a browser.
+
+Notes
+Domain Renewal: Remember that domain names are 
+typically purchased for a set period (like one year) 
+and need to be renewed.
+
+Heroku Documentation: Heroku has detailed documentation 
+and guides for setting up custom domains which can be very helpful.
