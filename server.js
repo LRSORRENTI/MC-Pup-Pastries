@@ -1,7 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const nodemailer = require('nodemailer');
-// const cors = require('cors');
+const cors = require('cors');
 const multer = require('multer');
 
 const app = express();
@@ -11,14 +11,14 @@ const upload = multer();
 
 // Middleware
 // const corsOptions = {
-  // origin: 'https://pup-pastries-1df10c9a0758.herokuapp.com',
-  // optionsSuccessStatus: 200 
-  // // some legacy browsers (IE11, various SmartTVs) choke on 204
+//   origin: 'https://pup-pastries-1df10c9a0758.herokuapp.com',
+//   optionsSuccessStatus: 200 
+ // // some legacy browsers (IE11, various SmartTVs) choke on 204
 // };
 
 // app.use(cors(corsOptions));
 
-// app.use(cors());
+app.use(cors());
 
 app.use(express.static('public'));
 
