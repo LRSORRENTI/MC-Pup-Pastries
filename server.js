@@ -10,12 +10,15 @@ const app = express();
 const upload = multer();
 
 // Middleware
-const corsOptions = {
-  origin: 'https://pup-pastries-1df10c9a0758.herokuapp.com',
-  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-};
+// const corsOptions = {
+  // origin: 'https://pup-pastries-1df10c9a0758.herokuapp.com',
+  // optionsSuccessStatus: 200 
+  // // some legacy browsers (IE11, various SmartTVs) choke on 204
+// };
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
+
+app.use(cors());
 
 app.use(express.static('public'));
 
@@ -37,9 +40,9 @@ app.post('/send', upload.none(), (req, res) => { // Use multer middleware
     to: process.env.RECIPIENT_EMAIL,
     subject: 'New Contact Form Submission',
     text: `You have a new submission from:
-Name: ${name}
-Email: ${email}
-Message: ${message}`,
+        Name: ${name}
+        Email: ${email}
+        Message: ${message}`,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
