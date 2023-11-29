@@ -139,9 +139,13 @@
           fetch('https://salty-oasis-03258-8b35f69aa684.herokuapp.com/send', {
             method: 'POST',
             body: formData, 
-            mode: 'no-cors'
           })
-          .then(response => response.json())
+          .then(response => {
+            if (!response.ok) {
+            throw new Error('Network response was not ok: ' + response.statusText);
+               }
+                return response.json();
+              })
           .then(data => {
             if (data.status === 'success') {
               showMessage('Email sent successfully!');
