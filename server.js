@@ -10,15 +10,15 @@ const app = express();
 const upload = multer();
 
 // Middleware
-// const corsOptions = {
-//   origin: 'https://pup-pastries-1df10c9a0758.herokuapp.com',
-//   optionsSuccessStatus: 200 
- // // some legacy browsers (IE11, various SmartTVs) choke on 204
-// };
+const corsOptions = {
+  origin: 'https://pup-pastries-1df10c9a0758.herokuapp.com',
+  optionsSuccessStatus: 200 
+ // some legacy browsers (IE11, various SmartTVs) choke on 204
+};
 
-// app.use(cors(corsOptions));
+app.use(cors(corsOptions));
 
-app.use(cors());
+// app.use(cors());
 
 app.use(express.static('public'));
 
