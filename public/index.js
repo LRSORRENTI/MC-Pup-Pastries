@@ -42,3 +42,8 @@ function closePopup() {
   document.getElementById('popup-message').style.display = 'none';
 }
 
+document.querySelectorAll('a').forEach(anchor => {
+  anchor.addEventListener('dragstart', event => {
+    event.preventDefault();
+  });
+});
