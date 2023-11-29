@@ -38,8 +38,8 @@ app.post('/send', upload.none(), (req, res) => { // Use multer middleware
   const mailOptions = {
     from: process.env.EMAIL_USERNAME,
     to: process.env.RECIPIENT_EMAIL,
-    subject: 'New Contact Form Submission',
-    text: `You have a new submission from:
+    subject: 'New Pup Pastry Inquiry',
+    text: `You have a new inquiry from:
         Name: ${name}
         Email: ${email}
         Message: ${message}`,
