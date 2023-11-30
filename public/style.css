@@ -118,6 +118,7 @@ article a::after {
 .article-p{
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  line-height: 120%;
 }
 
 /* basic article elements styling */
