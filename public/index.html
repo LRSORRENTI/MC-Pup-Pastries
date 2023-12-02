@@ -6,6 +6,7 @@
     <title>Pup Pastries</title>
     <link rel="icon" type="image/ico" href="./BEAR.ico">
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./carousel.css">
   </head>
   <body>
     <div class="banner">
@@ -17,6 +18,21 @@
         Fresh and natural dog treats made locally in Wauwatosa, Wisconsin
       </p>
     </div>
+    <!-- Carousel Container -->
+<div id="carousel" class="carousel">
+  <!-- Images -->
+  <div class="carousel-images">
+      <img src="./imgs/ingredients.jpg" alt="Image 1">
+      <img src="./imgs/bearBiscuit.jpg" alt="Image 2">
+      <img src="./imgs/boneBiscuit.jpg" alt="Image 3">
+      <img src="./imgs/biscPackage.jpg" alt="Image 4">
+      <!-- Add more images as needed -->
+  </div>
+
+  <!-- Navigation buttons -->
+  <button class="carousel-button prev">&#10094;</button>
+  <button class="carousel-button next">&#10095;</button>
+</div>
     <section class="articles">
       <article>
         <div class="article-wrapper">
@@ -133,8 +149,10 @@
       </ul>
       <p class="copyright">Pup Pastries @ 2023</p>
     </section>
-    <script src="./index.js"></script>
+    <script  src="./index.js"></script>
     <script>
+
+
       document.addEventListener('DOMContentLoaded', function () {
         var form = document.querySelector('.popup-form');
         

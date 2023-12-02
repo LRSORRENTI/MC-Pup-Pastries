@@ -3,6 +3,41 @@ let popupForm = document.querySelector(".popup-form");
 let popupBtn = document.querySelector(".popup-open");
 let popupClose = document.querySelector(".close-btn");
 
+let currentSlide = 0;
+
+function showSlide(index) {
+    const slides = document.querySelectorAll('.carousel-images img');
+    const totalSlides = slides.length;
+
+    if (index >= totalSlides) {
+        currentSlide = 0;
+    } else if (index < 0) {
+        currentSlide = totalSlides - 1;
+    } else {
+        currentSlide = index;
+    }
+
+    const offset = -currentSlide * 100;
+    slides.forEach(slide => {
+        slide.style.transform = `translateX(${offset}%)`;
+    });
+}
+
+ function moveSlide(direction) {
+    showSlide(currentSlide + direction);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Initialize the carousel to the first slide
+    moveSlide(0);
+
+    // Add event listeners to carousel buttons
+    document.querySelector('.carousel-button.prev').addEventListener('click', () => moveSlide(-1));
+    document.querySelector('.carousel-button.next').addEventListener('click', () => moveSlide(1));
+});
+
+
+
 popupBtn.addEventListener("click", (e) => {
   e.preventDefault();
   showPopup();
