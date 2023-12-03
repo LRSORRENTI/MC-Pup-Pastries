@@ -2,21 +2,31 @@
 PUP PASTRIES TO-DO LIST
 =======================
 
-1. Use La Belle Aurora to say "Fresh and Natural Dog Treats" 
+1. Wait for now on buying domain name, Mc is thinking
+about which is best 
 
-2. Underneath in Glass Antiqua say "Made Locally in Wauwatosa, Wisconsin"
-
-7. Set up email, MC has work email
-
-8. Change modal color to match website Background 
-   color  
-
-9. Change hover effect on bottom footer links, 
+2. Change hover effect on bottom footer links, 
    Mc wants the hover effect to be a larger font size 
    by a few px
 
-10. Start with two main cards, Mc is starting with two
+3. Keep carousel for now, Mc wants to take nicer pictures
+and maybe have the carousel in a different spot?
 
+4. Remove ingredient modal popup component
+
+5. Ingredient list is not final for Chloe's cupcakes, added 
+egg for bear's biscuits, also maybe need to space out 
+the margin, the final list item of egg is close to 
+the details about pastry span
+
+6. Make ingredient list inside of card component show and display
+like a drop down menu, so initially the ingrediant list is 
+hidden then when the user presses details about pastry it shows
+the list
+
+7. Try to use https://icon-icons.com/icon/print-paw/195246 as an 
+image instead of list-style: circle or just the regular 
+list style icons for ingredient list
 
 ==================
 DOMAIN NAME CHANGE
