@@ -19,6 +19,11 @@ egg for bear's biscuits, also maybe need to space out
 the margin, the final list item of egg is close to 
 the details about pastry span
 
+5. Hide everything below the main card div on first load, 
+when user presses details about pastry display, it shows the 
+paragraph 'these dog-themed....' like a drop down menu 
+effect
+
 6. Make ingredient list inside of card component show and display
 like a drop down menu, so initially the ingrediant list is 
 hidden then when the user presses details about pastry it shows

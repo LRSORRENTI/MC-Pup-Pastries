@@ -88,6 +88,10 @@ body {
     margin-bottom: 3%;
   }
 }
+.card-title {
+  /* margin-left: 95px */
+  text-align: center;
+}
 
 article {
   --img-scale: 1.001;
@@ -119,6 +123,7 @@ article a::after {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   line-height: 150%;
+  text-align: center;
 }
 
 /* basic article elements styling */
