@@ -110,6 +110,15 @@ article {
   user-select:none;
 }
 
+.sr-only{
+  color: red;
+  text-align: end;
+  border: 1px solid purple;
+  position: absolute;
+  left: 55%;
+  bottom: 8px;
+}
+
 article a::after {
   position: absolute;
   inset-block: 0;
@@ -124,7 +133,23 @@ article a::after {
   margin-bottom: 1rem;
   line-height: 150%;
   text-align: center;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+  padding: 0 20px;
 }
+
+.article-p-2{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 150%;
+  text-align: center;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+  padding: 0 20px;
+}
+
 
 /* basic article elements styling */
 article h2 {
@@ -160,6 +185,7 @@ article a {
   align-items: center;
   text-decoration: none;
   color: #28666e;
+  
 }
 
 article a:focus {
@@ -327,6 +353,77 @@ button {
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   border-radius: 10px;
   /* border: 2px solid #396afc; */
+}
+
+.downArrow {
+  /* font-size: 25px;
+  margin-left: 5px;
+  font-weight: bolder; */
+  display: none;
+}
+
+.btn-flex {
+  display: flex;
+  border: 2px solid red;
+  flex-direction: row;
+}
+
+#test{
+  display: flex;
+  border: 3px solid #87a597;
+  border-radius: 5px;
+  width: 50%;
+  padding-left: 5%;
+  padding-right: 35%;
+  transition: .4s ease-in-out;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 12px; */
+}
+
+#test:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 12px;
+  cursor: pointer;
+  color: #87a597;
+  
+}
+
+#test:hover #testBtn {
+  color: #87a597;
+}
+
+#testBtn {
+  margin-right: 5px;
+  font-family: "LaBelleAurore";
+  font-size: 22px;
+  padding-top: 5px;
+}
+
+#testBtn:hover{
+  color: #87a597;
+}
+/* #down {
+  margin-top: 6px;
+  font-size: 25px;
+  display: none;
+}
+
+#test:hover #down {
+  display: block;
+} */
+
+#down {
+  margin-top: 6px;
+  font-size: 28px;
+  font-weight:900;
+  padding-top: 5px;
+  text-shadow: 1px 0 currentColor; /* Horizontal shadow */
+
+  display: block; /* Make the arrow visible by default */
+
+  transition: opacity 0.5s ease; /* Define the transition effect */
+}
+
+#test:hover #down {
+  color:#28666e; /* Change opacity to 1 to make it visible on hover */
 }
 
 /* .popup-open {

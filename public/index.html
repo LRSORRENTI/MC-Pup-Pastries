@@ -20,20 +20,20 @@
       </p>
     </div>
     <!-- Carousel Container -->
-<div id="carousel" class="carousel">
+<!-- <div id="carousel" class="carousel"> -->
   <!-- Images -->
-  <div class="carousel-images">
+  <!-- <div class="carousel-images">
       <img src="./imgs/ingredients.jpg" alt="Image 1">
       <img src="./imgs/bearBiscuit.jpg" alt="Image 2">
       <img src="./imgs/boneBiscuit.jpg" alt="Image 3">
-      <img src="./imgs/biscPackage.jpg" alt="Image 4">
+      <img src="./imgs/biscPackage.jpg" alt="Image 4"> -->
       <!-- Add more images as needed -->
-  </div>
+  <!-- </div> -->
 
   <!-- Navigation buttons -->
-  <button class="carousel-button prev">&#10094;</button>
+  <!-- <button class="carousel-button prev">&#10094;</button>
   <button class="carousel-button next">&#10095;</button>
-</div>
+</div> -->
     <section class="articles">
       <article>
         <div class="article-wrapper">
@@ -48,8 +48,15 @@
               natural peanut butter, and a hint of cinnamon, offer a 
               delightful and nutritious snack
             </p>
-              <a class="read-more">
-              <span class="sr-only"> details about pastry</span>
+            <div id="test">
+              <button id="testBtn">Ingredients</button>
+              <!-- <p id="down">↓</p> -->
+              <p id="down">→</p>
+            </div>
+            <!-- <a class="read-more">
+              <button class="read">Details about pastry</button>
+              
+              
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon"
@@ -62,7 +69,7 @@
                   clip-rule="evenodd"
                 />
               </svg>
-            </a>
+            </a> -->
           </div>
         </div>
       </article>
@@ -73,7 +80,7 @@
           </figure>
           <div class="article-body">
             <h2 class="card-title">Chloe's Cupcakes</h2>
-            <p class="article-p">These dog-themed treats, crafted with wholesome 
+            <p class="article-p-2">These dog-themed treats, crafted with wholesome 
               ingredients including whole wheat flour, pumpkin 
               natural peanut butter, eggs, salt, and a hint of cinnamon
             offer a delightful and nutritious snack</p>
@@ -92,7 +99,7 @@
                 </li>
               </ul> -->
             <a class="read-more">
-              <span class="sr-only"> details about pastry</span>
+              <button id="click">Ingredients</button>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon"
@@ -168,8 +175,6 @@
     </section>
     <script  src="./index.js"></script>
     <script>
-
-
       document.addEventListener('DOMContentLoaded', function () {
         var form = document.querySelector('.popup-form');
         
@@ -224,9 +229,8 @@
             document.body.removeChild(messageDiv);
           }, 3000);
         }
-      });
+      })
     </script>
     
-
   </body>
 </html>

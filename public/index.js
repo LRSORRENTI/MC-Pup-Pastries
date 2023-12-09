@@ -23,6 +23,46 @@ function showSlide(index) {
     });
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+  const button = document.getElementById('click2');
+
+  if (button) {
+      button.addEventListener('click', function() {
+          let articleP = this.closest('.article-body').querySelector('.article-p');
+          if (articleP.style.maxHeight && articleP.style.maxHeight !== "0px") {
+              articleP.style.maxHeight = "0px";
+          } else {
+              articleP.style.maxHeight = articleP.scrollHeight + "px";
+          }
+      });
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const button = document.getElementById('test');
+
+  if (button) {
+      button.addEventListener('click', function() {
+          let articleP = this.closest('.article-body').querySelector('.article-p');
+          if (articleP.style.maxHeight && articleP.style.maxHeight !== "0px") {
+              articleP.style.maxHeight = "0px";
+          } else {
+              articleP.style.maxHeight = articleP.scrollHeight + "px";
+          }
+      });
+  }
+});
+
+
+document.getElementById("click2").addEventListener("mouseover", function() {
+  this.getElementsByClassName("downArrow")[0].style.display = "block"; // Show the arrow on hover
+});
+
+document.getElementById("click2").addEventListener("mouseout", function() {
+  this.getElementsByClassName("downArrow")[0].style.display = "none"; // Hide the arrow when not hovering
+});
+
+
  function moveSlide(direction) {
     showSlide(currentSlide + direction);
 }
