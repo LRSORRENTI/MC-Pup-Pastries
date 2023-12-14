@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pup Pastries</title>
-    <link rel="icon" type="image/ico" href="./BEAR.ico">
+    <link rel="icon" type="image/ico" href="./BEAR.ico" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -24,11 +24,12 @@
             <img id="bisq" src="./imgs/biscuits.jpg" alt="" />
           </figure>
           <div class="article-body">
-            <h2>Bear's Biscuits</h2>
-            <p class="article-p">These dog-themed treats, crafted with wholesome 
-                                 ingredients including 100% pumpkin puree, flour, 
-                                 natural peanut butter, and a hint of cinnamon, offer a 
-                                 delightful and nutritious snack</p>
+            <h2 class="card-h2">Bear's Biscuits</h2>
+            <p class="article-p">
+              These dog-themed treats, crafted with wholesome ingredients
+              including 100% pumpkin puree, flour, natural peanut butter, and a
+              hint of cinnamon, offer a delightful and nutritious snack
+            </p>
             <a href="#" class="read-more">
               <span class="sr-only"> details about pastry</span>
               <svg
@@ -53,11 +54,12 @@
             <img id="img1" src="./imgs/ginger.jpg" alt="" />
           </figure>
           <div class="article-body">
-            <h2>Chloe's Cupcakes</h2>
-            <p class="article-p">These dog-themed treats, crafted with wholesome 
-              ingredients including 100% pumpkin puree, flour, 
-              natural peanut butter, and a hint of cinnamon, offer a 
-              delightful and nutritious snack</p>
+            <h2 class="card-h2">Chloe's Cupcakes</h2>
+            <p class="article-p">
+              These dog-themed treats, crafted with wholesome ingredients
+              including 100% pumpkin puree, flour, natural peanut butter, and a
+              hint of cinnamon, offer a delightful and nutritious snack
+            </p>
             <a href="#" class="read-more">
               <span class="sr-only"> details about pastry</span>
               <svg
@@ -93,19 +95,26 @@
             <button class="popup-open">Contact</button>
             <div class="popup-wrapper">
               <div class="popup">
-                <button class="close-btn"></button> <!-- Fixed the opening tag here -->
-                <form name="contact" class="popup-form" method="POST" data-netlify="true" data-netlify-function="send-email">
+                <button class="close-btn"></button>
+                <!-- Fixed the opening tag here -->
+                <form
+                  name="contact"
+                  class="popup-form"
+                  method="POST"
+                  data-netlify="true"
+                  data-netlify-function="send-email"
+                >
                   <h2 class="popup-form__title">Contact Us</h2>
                   <input
                     type="text"
-                    name="name" 
+                    name="name"
                     class="popup-form__input"
                     placeholder="Name"
                     required
                   />
                   <input
-                    type="email" 
-                    name="email" 
+                    type="email"
+                    name="email"
                     class="popup-form__input"
                     placeholder="Email"
                     required
@@ -121,11 +130,9 @@
                   ></textarea>
                   <button type="submit" class="popup-form__submit">Send</button>
                 </form>
-                
               </div>
             </div>
           </section>
-          
         </li>
         <li>
           <a id="footer-a" href="#">About</a>
@@ -135,63 +142,63 @@
     </section>
     <script src="./index.js"></script>
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        var form = document.querySelector('.popup-form');
-        
-        form.addEventListener('submit', function (e) {
+      document.addEventListener("DOMContentLoaded", function () {
+        var form = document.querySelector(".popup-form");
+
+        form.addEventListener("submit", function (e) {
           e.preventDefault();
           var formData = new FormData(form);
           // fetch('http://localhost:3000/send', {
           // fetch('https://salty-oasis-03258-8b35f69aa684.herokuapp.com/send', {
-            fetch('https://pup-pastries-1df10c9a0758.herokuapp.com/send', {
-            method: 'POST',
-            body: formData, 
+          fetch("https://pup-pastries-1df10c9a0758.herokuapp.com/send", {
+            method: "POST",
+            body: formData,
           })
-          .then(response => {
-            if (!response.ok) {
-            throw new Error('Network response was not ok: ' + response.statusText);
-               }
-                return response.json();
-              })
-          .then(data => {
-            if (data.status === 'success') {
-              showMessage('Email sent successfully!');
-              form.reset();
-            } else {
-              showMessage('Failed to send email.');
-            }
-          })
-          .catch(error => {
-            console.error('Error:', error);
-            showMessage('Failed to send email.');
-          });
+            .then((response) => {
+              if (!response.ok) {
+                throw new Error(
+                  "Network response was not ok: " + response.statusText
+                );
+              }
+              return response.json();
+            })
+            .then((data) => {
+              if (data.status === "success") {
+                showMessage("Email sent successfully!");
+                form.reset();
+              } else {
+                showMessage("Failed to send email.");
+              }
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+              showMessage("Failed to send email.");
+            });
         });
-        
+
         function showMessage(message) {
-          var messageDiv = document.createElement('div');
+          var messageDiv = document.createElement("div");
           messageDiv.textContent = message;
-          
-          messageDiv.style.position = 'fixed';
-          messageDiv.style.top = '50%';
-          messageDiv.style.left = '50%';
-          messageDiv.style.transform = 'translate(-50%, -50%)';
-          messageDiv.style.backgroundColor = '#87a597';
-          messageDiv.style.padding = '30px';
-          messageDiv.style.borderRadius = '5px';
-          messageDiv.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
-          messageDiv.style.textAlign = 'center';
-          messageDiv.style.zIndex = '1000';
-          messageDiv.style.border = '3px solid white';
-          
+
+          messageDiv.style.position = "fixed";
+          messageDiv.style.top = "50%";
+          messageDiv.style.left = "50%";
+          messageDiv.style.transform = "translate(-50%, -50%)";
+          messageDiv.style.backgroundColor = "#87a597";
+          messageDiv.style.padding = "30px";
+          messageDiv.style.borderRadius = "5px";
+          messageDiv.style.boxShadow = "0 4px 6px rgba(0, 0, 0, 0.1)";
+          messageDiv.style.textAlign = "center";
+          messageDiv.style.zIndex = "1000";
+          messageDiv.style.border = "3px solid white";
+
           document.body.appendChild(messageDiv);
-          
-          setTimeout(function() {
+
+          setTimeout(function () {
             document.body.removeChild(messageDiv);
           }, 3000);
         }
       });
     </script>
-    
-
   </body>
 </html>
