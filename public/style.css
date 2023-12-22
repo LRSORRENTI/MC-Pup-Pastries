@@ -532,3 +532,25 @@ textarea {
     font-size: 22px;
 }
 } */
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #28666e #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 21px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #28666e;
+  border-radius: 21px;
+  border: 5px double #ffffff;
+}
