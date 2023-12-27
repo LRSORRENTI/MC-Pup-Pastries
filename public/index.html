@@ -32,6 +32,7 @@
     <!-- <button class="carousel-button prev">&#10094;</button>
   <button class="carousel-button next">&#10095;</button>
 </div> -->
+
     <section class="articles">
       <article>
         <div class="article-wrapper">
@@ -45,7 +46,7 @@
               including 100% pumpkin puree, flour, natural peanut butter, and a
               hint of cinnamon, offer a delightful and nutritious snack
             </p>
-            <a href="#" class="read-more">
+            <a class="read-more" id="openModal1">
               <span class="sr-only"> details about pastry</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +76,7 @@
               including 100% pumpkin puree, flour, natural peanut butter, and a
               hint of cinnamon, offer a delightful and nutritious snack
             </p>
-            <a href="#" class="read-more">
+            <a class="read-more" id="openModal2">
               <span class="sr-only"> details about pastry</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -94,6 +95,75 @@
         </div>
       </article>
     </section>
+    <!-- <div id="myModal1" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Ingredients</h2>
+        <ul>
+          <li>Flour</li>
+          <li>Sugar</li>
+          <li>Eggs</li>
+        </ul>
+      </div>
+    </div>
+    <div id="myModal2" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Ingredients for Second Pastry</h2>
+          <ul>
+              <li>Butter</li>
+              <li>Milk</li>
+              <li>Chocolate</li>
+          </ul>
+      </div> -->
+    <style>
+      /* Modal Styles */
+      .modal {
+        display: none; /* Keep this to initially hide the modal */
+        position: fixed;
+        z-index: 999; /* Slightly less than the content to be below it */
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto; /* If content is too large, allows scrolling */
+        background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+      }
+
+      .modal-content {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #87a597;
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        z-index: 1000;
+        border: 3px solid white;
+        /* Set a width for the modal or it will be as wide as its content */
+        width: 40%;
+        /* Optional: Set a max-width to ensure it doesn't get too large on wide screens */
+        max-width: 600px;
+      }
+
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        padding: 5px;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    </style>
+
     <section class="footer">
       <!-- <div class="social">
               <a href="#"><i class="fab fa-instagram"></i></a>
@@ -215,5 +285,64 @@
         }
       });
     </script>
+     <div id="myModal1" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Ingredients</h2>
+        <ul>
+          <li>Flour</li>
+          <li>Sugar</li>
+          <li>Eggs</li>
+        </ul>
+      </div>
+    </div>
+    <div id="myModal2" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Ingredients for Second Pastry</h2>
+          <ul>
+              <li>Butter</li>
+              <li>Milk</li>
+              <li>Chocolate</li>
+          </ul>
+      </div>
+      <script>
+        // Function to open a modal
+        function openModal(modalId) {
+          document.getElementById(modalId).style.display = "block";
+        }
+  
+        // Function to close a modal
+        function closeModal(modalId) {
+          document.getElementById(modalId).style.display = "none";
+        }
+  
+        // Event listeners for the first link and modal
+        document.getElementById("openModal1").onclick = function () {
+          openModal("myModal1");
+        };
+  
+        // Event listeners for the second link and modal
+        document.getElementById("openModal2").onclick = function () {
+          openModal("myModal2");
+        };
+  
+        // Close modal if close button is clicked
+        Array.from(document.getElementsByClassName("close")).forEach(function (
+          element
+        ) {
+          element.onclick = function () {
+            closeModal(this.closest(".modal").id);
+          };
+        });
+  
+        // Close modal if clicked outside of modal content
+        window.onclick = function (event) {
+          if (event.target.classList.contains("modal")) {
+            closeModal(event.target.id);
+          }
+        };
+      </script>
+  
   </body>
 </html>
