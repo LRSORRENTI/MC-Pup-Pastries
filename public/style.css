@@ -67,7 +67,7 @@ body {
 
 #head-cont {
   font-family: "LaBelleAurore";
-  font-size: 3rem;
+  font-size: 2.7rem;
   margin-bottom: 5%;
   line-height: 60px;
   /* padding-top: 5%;
@@ -218,7 +218,7 @@ article:has(:hover, :focus) {
   }
 
   #head-cont {
-    font-size: 2rem; /* Adjust heading font size for smaller screens */
+    font-size: 2.3rem; /* Adjust heading font size for smaller screens */
   }
 
   .articles {
