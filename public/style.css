@@ -567,3 +567,15 @@ textarea {
   border-radius: 21px;
   border: 5px double #ffffff;
 }
+
+.bone {
+  margin: 20px;
+  position: relative;
+  width: 150px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-family: "GlassAntiqua";
+  letter-spacing: 0.1rem;
+}

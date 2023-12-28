@@ -2,20 +2,9 @@
 PUP PASTRIES TO-DO LIST
 =======================
 
-1. Use La Belle Aurora to say "Fresh and Natural Dog Treats" 
-
-2. Underneath in Glass Antiqua say "Made Locally in Wauwatosa, Wisconsin"
-
-7. Set up email, MC has work email
-
-8. Change modal color to match website Background 
-   color  
-
-9. Change hover effect on bottom footer links, 
-   Mc wants the hover effect to be a larger font size 
-   by a few px
-
-10. Start with two main cards, Mc is starting with two
+1. Mc is going to omit the ingredient list entirely,
+  I'll leave it commented out for now in case she wants to 
+  add it before official deployment
 
 
 ==================
