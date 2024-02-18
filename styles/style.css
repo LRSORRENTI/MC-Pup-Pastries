@@ -1,0 +1,291 @@
+@font-face {
+  font-family: "GreatVibes";
+  src: url(../fonts/GreatVibes-Regular.ttf);
+}
+@font-face {
+  font-family: "GlassAntiqua";
+  src: url(../fonts/GlassAntiqua-Regular.ttf);
+}
+
+@font-face {
+  font-family: "LaBelleAurore";
+  src: url(../fonts/LaBelleAurore-Regular.ttf);
+}
+* {
+  margin: 0;
+  scrollbar-width: auto;
+  scrollbar-color: #87a597 #ffffff;
+  scrollbar-gutter: stable both-edges;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 50px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ff3f3f;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #87a597;
+  border-radius: 21px;
+  border: 5px double #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 48px 0;
+  font-family: "GlassAntiqua", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  background-color: #87a597;
+  min-height: 100vh;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#bear {
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-radius: 5%;
+}
+
+#bisq,
+#img1,
+#img3 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#main-container {
+  width: 600px;
+  display: block;
+  margin: auto;
+  margin-top: 12%;
+  margin-bottom: 8%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+#head-cont {
+  font-family: "LaBelleAurore";
+  font-size: 2.7rem;
+  margin-bottom: 5%;
+  line-height: 60px;
+}
+
+#main-cont-p {
+  font-family: "GlassAntiqua", sans-serif;
+  font-size: 25px;
+}
+@media (min-width: 1000px) {
+  #main-container {
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+}
+
+.read-more {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  /* border: 3px solid #28666e; */
+  width: 50%;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  border-radius: 5px;
+  font-size: 25px;
+  margin-left: 27%;
+}
+
+.card-h2 {
+  text-align: center;
+}
+
+article {
+  --img-scale: 1.001;
+  --title-color: black;
+  --link-icon-translate: -20px;
+  --link-icon-opacity: 0;
+  font-family: "LaBelleAurore";
+  position: relative;
+  border-radius: 16px;
+  /* box-shadow: none; */
+  background: #fff;
+  transform-origin: center;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 14px, rgba(0, 0, 0, 0.15) 0px 5px 5px;
+  user-select: none;
+}
+
+article a::after {
+  position: absolute;
+  inset-block: 0;
+  inset-inline: 0;
+  cursor: pointer;
+  content: "";
+  user-select: none;
+}
+
+.article-p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 150%;
+  text-align: center;
+}
+
+/* basic article elements styling */
+article h2 {
+  margin: 0 0 18px 0;
+  /* font-family: "Bebas Neue", cursive; */
+  font-size: 1.9rem;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+  transition: color 0.3s ease-out;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+article img {
+  max-width: 100%;
+  transform-origin: center;
+  transform: scale(var(--img-scale));
+  transition: transform 0.4s ease-in-out;
+}
+
+.article-body {
+  padding: 24px;
+}
+
+article a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #28666e;
+}
+
+article a:focus {
+  outline: 1px dotted #28666e;
+}
+
+article a .icon {
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+  transform: translateX(var(--link-icon-translate));
+  opacity: var(--link-icon-opacity);
+  transition: all 0.3s;
+}
+
+/* using the has() relational pseudo selector to update our custom properties */
+article:has(:hover, :focus) {
+  --img-scale: 1.1;
+  --title-color: #28666e;
+  --link-icon-translate: 0;
+  --link-icon-opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+/************************ 
+    Generic layout (demo looks)
+    **************************/
+
+.articles {
+  display: grid;
+  max-width: 1000px;
+  margin-inline: auto;
+  padding-inline: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+@media (max-width: 610px) {
+  body {
+    padding: 24px 0; /* Reduced padding for smaller screens */
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  #bear {
+    width: 80%; /* Make bear image responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 15px;
+  }
+
+  #main-container {
+    width: 100%; /* Full width on small screens */
+    margin-top: 10%; /* Adjusted margin */
+    margin-bottom: 5%; /* Adjusted margin */
+    padding: 0 20px; /* Add padding on the sides */
+    font-size: 1.2rem; /* Adjust font size if needed */
+  }
+
+  #head-cont {
+    font-size: 2.3rem; /* Adjust heading font size for smaller screens */
+  }
+
+  .articles {
+    padding-inline: 10px; /* Adjust padding for the articles container */
+    grid-template-columns: 1fr; /* Stack articles in one column */
+  }
+
+  article {
+    --img-scale: 1; /* Prevent scaling on small screens */
+  }
+
+  /* Adjust other elements as needed */
+}
+
+/* FOOTER */
+
+.footer {
+  margin-top: 5%;
+  padding: 40px 0;
+  cursor: default;
+}
+
+.footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+#footer-p {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+#mailto {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  text-decoration: none;
+  color: #0b0b0b;
+  font-weight: 900;
+  transition: 0.3s ease;
+  width: min-content;
+  letter-spacing: 0.3rem;
+  font-size: 20px;
+}
+
+#mailto:hover {
+  color: #fff;
+}
