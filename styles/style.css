@@ -37,12 +37,12 @@
 
 body {
   margin: 0;
-  padding: 48px 0;
+  /* padding: 48px 0; */
   font-family: "GlassAntiqua", sans-serif;
   font-size: 1.2rem;
   line-height: 1.6rem;
   background-color: #87a597;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -76,7 +76,7 @@ body {
   display: block;
   margin: auto;
   margin-top: 12%;
-  margin-bottom: 8%;
+  /* margin-bottom: 8%; */
   text-align: center;
   font-size: 1.5rem;
   font-weight: 300;
@@ -241,13 +241,13 @@ article:has(:hover, :focus) {
 /* FOOTER */
 
 .footer {
-  margin-top: 5%;
-  padding: 40px 0;
+  /* margin-top: 5%; */
+  /* padding: 40px 0; */
   cursor: default;
 }
 
 .footer .copyright {
-  margin-top: 15px;
+  /* margin-top: 15px; */
   text-align: center;
   font-size: 13px;
   color: #ffffff;
@@ -330,6 +330,8 @@ article:has(:hover, :focus) {
   position: relative;
   max-width: 800px;
   margin: auto;
+  margin-bottom: 40px;
+  margin-top: 50px;
   background: #fff;
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
   padding: 25px;
@@ -347,7 +349,9 @@ article:has(:hover, :focus) {
   .blog-slider {
     min-height: 500px;
     height: auto;
-    margin: 180px auto;
+    margin-bottom: 40px;
+    margin-top: 180px;
+    /* margin: 180px auto; */
   }
 }
 @media screen and (max-height: 500px) and (min-width: 992px) {
@@ -422,10 +426,12 @@ article:has(:hover, :focus) {
   flex-shrink: 0;
   height: 300px;
   background-image: linear-gradient(147deg, #28666e 0%, #87a597 74%);
-  box-shadow: 4px 13px 30px 1px #87a597;
+  box-shadow: 4px 2px 5px 1px #87a597;
   border-radius: 20px;
   transform: translateX(-80px);
   overflow: hidden;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .blog-slider__img:after {
   content: "";
