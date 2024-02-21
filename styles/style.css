@@ -333,8 +333,9 @@ article:has(:hover, :focus) {
   margin-bottom: 40px;
   margin-top: 50px;
   background: #fff;
-  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-  padding: 25px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  /* padding: 25px; */
   border-radius: 25px;
   height: 400px;
   transition: all 0.3s;
@@ -426,12 +427,15 @@ article:has(:hover, :focus) {
   flex-shrink: 0;
   height: 300px;
   background-image: linear-gradient(147deg, #28666e 0%, #87a597 74%);
-  box-shadow: 4px 2px 5px 1px #87a597;
+  /* box-shadow: 4px 2px 5px 1px #87a597; */
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   border-radius: 20px;
   transform: translateX(-80px);
   overflow: hidden;
   padding-top: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 7px;
+  border: 3px solid #fff;
 }
 .blog-slider__img:after {
   content: "";
@@ -452,6 +456,7 @@ article:has(:hover, :focus) {
   opacity: 0;
   border-radius: 20px;
   transition: all 0.3s;
+  border: 1px solid #fff;
 }
 @media screen and (max-width: 768px) {
   .blog-slider__img {
