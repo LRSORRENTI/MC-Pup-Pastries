@@ -39,7 +39,7 @@ body {
   margin: 0;
   /* padding: 48px 0; */
   font-family: "GlassAntiqua", sans-serif;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
   line-height: 1.6rem;
   background-color: #87a597;
   /* min-height: 100vh; */
@@ -83,14 +83,14 @@ body {
   margin-top: 12%;
   /* margin-bottom: 8%; */
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 10px;
   font-weight: 300;
   transition: 0.5s ease;
 }
 
 #head-cont {
   font-family: "LaBelleAurore";
-  font-size: 2.7rem;
+  font-size: 33px;
   margin-bottom: 20px;
   line-height: 60px;
 }
