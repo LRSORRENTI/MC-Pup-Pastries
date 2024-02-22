@@ -97,7 +97,7 @@ body {
 
 #main-cont-p {
   font-family: "GlassAntiqua", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
 }
 .card-h2 {
   text-align: center;
@@ -351,7 +351,7 @@ article:has(:hover, :focus) {
 }
 
 #testmail:hover {
-  color: #28666e;
+  opacity: 50%;
 }
 
 .blog-slider {
@@ -368,7 +368,16 @@ article:has(:hover, :focus) {
   border-radius: 25px;
   /* height: 400px; */
   transition: all 0.3s;
+  text-align: center;
 }
+
+.blog-slider__text {
+  max-width: 190px;
+  text-align: center;
+  font-size: 18px;
+  /* font-weight: 900; */
+}
+
 @media screen and (max-width: 992px) {
   /* .blog-slider {
     max-width: 680px;
@@ -455,7 +464,7 @@ article:has(:hover, :focus) {
   width: 500px;
   flex-shrink: 0;
   height: 300px;
-  background-image: linear-gradient(147deg, #28666e 0%, #87a597 74%);
+  /* background-image: linear-gradient(147deg, #28666e 0%, #87a597 74%); */
   /* box-shadow: 4px 2px 5px 1px #87a597; */
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
@@ -464,7 +473,8 @@ article:has(:hover, :focus) {
   overflow: hidden;
   padding-top: 5px;
   padding-bottom: 7px;
-  border: 3px solid #fff;
+  background-color: #fff;
+  /* border: 3px solid #fff; */
 }
 .blog-slider__img:after {
   content: "";
@@ -485,17 +495,17 @@ article:has(:hover, :focus) {
   opacity: 0;
   border-radius: 20px;
   transition: all 0.3s;
-  border: 1px solid #fff;
 }
+
 @media screen and (max-width: 1000px) {
   .blog-slider__img {
     transform: translateY(-50%);
-    width: 90%;
+    width: 100%;
   }
 }
 @media screen and (max-width: 576px) {
   .blog-slider__img {
-    width: 95%;
+    width: 100%;
   }
 }
 @media screen and (max-height: 500px) and (min-width: 992px) {
@@ -619,7 +629,7 @@ article:has(:hover, :focus) {
 }
 
 .main-wrap {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
