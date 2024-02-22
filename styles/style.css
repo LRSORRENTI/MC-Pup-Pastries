@@ -311,6 +311,7 @@ article:has(:hover, :focus) {
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  background-color: #fff;
 }
 
 #mailto:hover {
@@ -365,7 +366,7 @@ article:has(:hover, :focus) {
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   /* padding: 25px; */
   border-radius: 25px;
-  height: 400px;
+  /* height: 400px; */
   transition: all 0.3s;
 }
 @media screen and (max-width: 992px) {
@@ -376,7 +377,7 @@ article:has(:hover, :focus) {
 }
 @media screen and (max-width: 1000px) {
   .blog-slider {
-    min-height: 500px;
+    /* min-height: 500px; */
     height: auto;
     margin-bottom: 40px;
     margin-top: 180px;
