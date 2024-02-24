@@ -470,9 +470,9 @@ article:has(:hover, :focus) {
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   border-radius: 20px;
   transform: translateX(-80px);
-  overflow: hidden;
-  padding-top: 5px;
-  padding-bottom: 7px;
+  /* overflow: hidden; */
+  /* padding-top: 5px;
+  padding-bottom: 7px; */
   background-color: #fff;
   /* border: 3px solid #fff; */
 }
@@ -544,11 +544,13 @@ article:has(:hover, :focus) {
   font-weight: 700;
   color: #0d0925;
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 .blog-slider__text {
   color: #4e4a67;
   margin-bottom: 30px;
   line-height: 1.5em;
+  font-weight: 700;
 }
 .blog-slider__button {
   /* display: inline-flex; */
