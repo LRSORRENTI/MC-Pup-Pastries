@@ -354,6 +354,21 @@ article:has(:hover, :focus) {
   opacity: 70%;
 }
 
+#testmail2 {
+  color: #101010;
+  text-decoration: none;
+  letter-spacing: 0.3rem;
+  font-weight: 900;
+  transition: 0.3s ease;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+#testmail2:hover {
+  color: #fff;
+}
+
 .blog-slider {
   width: 95%;
   position: relative;
