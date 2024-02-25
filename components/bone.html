@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button class="bone">
+      <div class="c1"></div>
+      <div class="c2"></div>
+      <div class="c3"></div>
+      <div class="c4"></div>
+      <div class="b1">
+        <div class="b2">
+          <a href="mailto:email@email.com"
+            >contactExample@yahoo.com
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              id="fas"
+              viewBox="0 0 512 512"
+              style="padding-top: 5px"
+            >
+              <path
+                d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"
+              /></svg
+          ></a>
+        </div>
+      </div>
+    </button>
+    <style>
+        .bone {
+            margin: 20px;
+            position: relative;
+            width: 250px;
+            height: 60px;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+          }
+          .c1,
+          .c2,
+          .c3,
+          .c4 {
+            background: #fff;
+            height: 30px;
+            width: 30px;
+            /* border: 1px solid #000; */
+            border-radius: 50%;
+            position: absolute;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+              rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+              rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+          }
+          .c1 {
+            left: 0;
+            top: 0;
+          }
+          .c2 {
+            right: 0;
+            top: 0;
+          }
+          .c3 {
+            left: 0;
+            bottom: 0;
+          }
+          .c4 {
+            bottom: 0;
+            right: 0;
+          }
+    </style>
+  </body>
+</html>

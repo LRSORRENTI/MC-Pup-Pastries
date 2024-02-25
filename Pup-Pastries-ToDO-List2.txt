@@ -2,10 +2,8 @@
 PUP PASTRIES TO-DO LIST
 =======================
 
-1. Mc is going to omit the ingredient list entirely,
-  I'll leave it commented out for now in case she wants to 
-  add it before official deployment
-
+1. Mc will take a picture of the cupcakes to 
+add a new image to the cupcake carousel item
 
 ==================
 DOMAIN NAME CHANGE
