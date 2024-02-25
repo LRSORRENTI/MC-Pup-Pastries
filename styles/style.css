@@ -378,6 +378,10 @@ article:has(:hover, :focus) {
   /* font-weight: 900; */
 }
 
+.p-wrap {
+  padding-bottom: 80px;
+}
+
 @media screen and (max-width: 992px) {
   /* .blog-slider {
     max-width: 680px;
